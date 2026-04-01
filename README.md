@@ -1,45 +1,32 @@
-# cybersecurity-virtualization-lab
-Built a Windows 11 and Kali Linux virtualization lab using Oracle VirtualBox. Includes system setup, updates, snapshots, and security use cases.
-Cybersecurity Virtualization Lab
- Overview
+# Cybersecurity Virtualization Lab
 
-This project demonstrates the setup and management of a virtualization lab using Oracle VirtualBox. The lab includes a Windows 11 virtual machine and a Kali Linux virtual machine to simulate real-world cybersecurity environments.
+## Overview
+This project documents the setup and management of a hands-on virtualization lab using Oracle VirtualBox. The lab includes a Windows 11 virtual machine and a Kali Linux virtual machine to simulate a basic cybersecurity testing environment.
 
-Technologies Used
-Oracle VirtualBox
-Windows 11
-Kali Linux
-Ninite (software deployment)
-Linux CLI (apt package manager)
+## Skills Demonstrated
+- Virtual machine deployment
+- Windows 11 installation and updating
+- Kali Linux setup and package management
+- Snapshot creation and rollback
+- Software deployment with Ninite
+- VM networking troubleshooting
+- System isolation for safe testing
 
- Lab Objectives
-Create and configure virtual machines
-Apply system updates and maintain secure environments
-Use snapshots to capture and restore system states
-Demonstrate VM isolation and compartmentalization
+## Key Tasks Completed
+### Windows 11
+- Created a new Windows 11 VM
+- Ran Windows Update until fully patched
+- Created a baseline snapshot
+- Installed software using Ninite
+- Reverted to snapshot to restore a clean state
 
-Windows 11 Setup
-Installed Windows 11 using ISO
-Fully updated system using Windows Update
-Created baseline snapshot
-Installed applications using Ninite
-Reverted snapshot to restore clean system
+### Kali Linux
+- Configured and launched a Kali Linux VM
+- Updated the system using:
+  - `sudo apt update`
+  - `sudo apt upgrade -y`
+- Created a baseline snapshot
+- Troubleshot a network connectivity issue by adjusting the adapter to NAT
 
- Kali Linux Setup
-Installed Kali Linux VM
-Updated system using:
-sudo apt update
-sudo apt upgrade -y
-Created baseline snapshot
-
- Key Concepts Learned
-Virtualization in cybersecurity
-Snapshot and rollback functionality
-System isolation for safe testing
-Basic Linux package management
-Troubleshooting network issues in VMs
-
-Challenges Encountered
-Required creating Windows 11 instead of using an existing Windows 10 VM
-Resolved Kali Linux network issue by adjusting VirtualBox adapter settings to NAT
-Managed system resource usage while running multiple VMs
+## What I Learned
+This lab helped me better understand how virtualization supports cybersecurity by allowing systems to be isolated, tested, and restored safely. I also gained more confidence working with both Windows and Linux environments and troubleshooting VM configuration issues.
